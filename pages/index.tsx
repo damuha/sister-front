@@ -4,8 +4,16 @@ import Image from 'next/image'
 export const Home = (): JSX.Element => (
   <div className="container">
     <Head>
-      <title>Create Next App</title>
-      <link rel="icon" href="/favicon.ico" />
+      <title>sister（シスター）</title>
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="あなたのsisterを見つけよう" />
+      <meta name="twitter:description" content="sisterを見つけて、いろんなお話をしてみませんか？" />
+      <meta name="twitter:image" content="https://sister-prod.s3-ap-northeast-1.amazonaws.com/background+with+whiteback_2+(1).png" />
+      <meta property="og:url" content="sisterwith.com" />
+      <meta property="og:description" content="sisterを見つけて、いろんなお話をしてみませんか？" />
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content="あなたのsisterを見つけよう" />
+      <meta property="og:image" content="https://sister-prod.så3-ap-northeast-1.amazonaws.com/background+with+whiteback_2+(1).png" />
     </Head>
     <main>
       <div className="main-head">
