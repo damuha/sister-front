@@ -69,7 +69,7 @@ export const Home = (): JSX.Element => (
             </div>
           </div>
         </div>
-        <hr width="30%"/>
+        <hr />
         <div className="main-detail-block about-sister-block">
           <div className="about-sister-image">
             <Image src="/img/yanger-sister.png" alt="一歩踏み出す" height={'600'} width={'174'}/>
