@@ -4,7 +4,6 @@ import Image from 'next/image'
 export const Home = (): JSX.Element => (
   <div className="container">
     <Head>
-      <title>sister（シスター）</title>
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content="あなたのsisterを見つけよう" />
       <meta name="twitter:description" content="sisterを見つけて、いろんなお話をしてみませんか？" />
@@ -14,6 +13,7 @@ export const Home = (): JSX.Element => (
       <meta property="og:type" content="website" />
       <meta property="og:title" content="あなたのsisterを見つけよう" />
       <meta property="og:image" content="https://sister-prod.så3-ap-northeast-1.amazonaws.com/background+with+whiteback_2+(1).png" />
+      <link rel="icon" href="/favicon.ico" />
     </Head>
     <main>
       <div className="main-head">
