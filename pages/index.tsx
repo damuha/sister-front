@@ -7,62 +7,154 @@ export const Home = (): JSX.Element => (
       <title>Create Next App</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
-
     <main>
-      <h1 className="title">
-        Welcome to <a href="https://nextjs.org">Next.js!</a>
-      </h1>
-
-      <p className="description">
-        Get started by editing <code>pages/index.tsx</code>
-      </p>
-
-      <button
-        onClick={() => {
-          window.alert('With typescript and Jest')
-        }}
-      >
-        Test Button
-      </button>
-
-      <div className="grid">
-        <a href="https://nextjs.org/docs" className="card">
-          <h3>Documentation &rarr;</h3>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a href="https://nextjs.org/learn" className="card">
-          <h3>Learn &rarr;</h3>
-          <p>Learn about Next.js in an interactive course with quizzes!</p>
-        </a>
-
-        <a
-          href="https://github.com/vercel/next.js/tree/master/examples"
-          className="card"
-        >
-          <h3>Examples &rarr;</h3>
-          <p>Discover and deploy boilerplate example Next.js projects.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          className="card"
-        >
-          <h3>Deploy &rarr;</h3>
-          <p>Instantly deploy your Next.js site to a public URL with Vercel.</p>
-        </a>
+      <div className="main-head">
+        <h1 className="main-title">
+          sister
+        </h1>
       </div>
+      <div className="main-contents">
+        <div className="main-message">
+          <div className="message">
+            <p className="message-big">
+              もう、悩まなくていい。<br />
+              姉妹や仲間を<br />
+              ここで見つけよう<br />
+            </p>
+            <p className="message-sub">
+              女性が少ないIT業界だけど、ここで仲間を見つけられる、教えてもらえる。<br />
+              安心して、あなたのシスターに技術やキャリアの相談をしよう<br />
+            </p>
+          </div>
+          <div className="main-buttons">
+            <a href="https://app.sisterwith.com/users/sign_up" className="btn--main-color">はじめる</a><br />
+            <a href="https://blog.sisterwith.com/blog/create-sister-plan" className="btn--main-color">お姉さんになる</a><br />
+          </div>
+        </div>
+          <p className="center-msg"> すでに登録されている方はこちらから<a href="https://app.sisterwith.com/users/sign_in" className="normal-link">ログイン</a>してください！</p>
+        <div className="main-detail">
+          <h2 className="title">sisterを活用する</h2>
+          <hr width="30%"/>
+          <div className="main-detail-block">
+            <div className="main-detail-contents">
+              <Image src="/img/detail-image1.png" alt="sisterを探せる" height={'210'} width={'320'} />
+              <p className="sub-title">sisterを探せる</p>
+              <p className="detail-block">
+                『sister』は女性のロールモデルが少ないIT・Web業界に特化した女性向け(自認も含む)キャリア/スキルシェアサービスです。エンジニアに限らず、IT・Web業界全般を対象としています
+                <br /><br />
+                あなたの「sister」を見つけて、1on1でメンターやコーチングなどをしてもらうこともできます。
+                <br /><br />
+                ※プランは500円〜
+              </p>
+            </div>
+            <div className="main-detail-contents">
+              <Image src="/img/detail-image2.png" alt="悩みを相談する" height={'210'} width={'320'} />
+              <p className="sub-title">悩みを相談する</p>
+              <p className="detail-block">
+                女性が少ない業界だからこそ、参考になるキャリアや経験が身近で見つけづらく、悩んだことはないでしょうか？
+                <br /><br />
+                「sister」では、いろんな女性がキャリアや経験をシェアしています。あなたのこれからのヒントとなる、キャリアや経験、ロールモデルがを見つけましょう
+                <br /><br />
+                また、オープンカフェであなたの悩みや話したいことを共有してみましょう    
+              </p>
+            </div>
+            <div className="main-detail-contents">
+              <Image src="/img/detail-image3.png" alt="一歩踏み出す" height={'210'} width={'320'} />
+              <p className="sub-title">一歩踏み出す</p>
+              <p className="detail-block">
+                女性には女性特有のライフステージがあります。その中で、夢をあきらめたり、新しいことに挑戦しにくかったり、いろんなことに悩むことも多いかと思います。
+                <br /><br />
+                「sister」では同じような経験や悩み、それを解決した方法などをシェアすることで、誰かが一歩ふみ出せるよう、背中を押すプラットフォームです。          
+              </p>
+            </div>
+          </div>
+        </div>
+        <hr width="30%"/>
+        <div className="main-detail-block about-sister-block">
+          <div className="about-sister-image">
+            <Image src="/img/yanger-sister.png" alt="一歩踏み出す" height={'600'} width={'174'}/>
+          </div>
+          <div className="main-about-sister">
+            <p className="sub-title">sisterについて</p>
+            <p className="detail-block">
+              『sister』は女性のロールモデルが少ないIT・Web業界に特化した女性向けキャリア/スキルシェアサービスです。
+              <br /><br />
+              女性が少ないIT業界では、キャリアの悩みや、様々なライフステージを迎えるタイミングでの働き方など、身近に相談できる相手が少ないように感じるのではないでしょうか。
+              <br /><br />
+              「sister」では、心理的ハードルを極力下げ、キャリアや、IT・Web業界で働く上での悩み、結婚妊娠出産を経ての働き方、技術に関するフォローアップなどを、気軽に話せる「sister」がいればいいなという思いで、できたプラットフォームです。
+              <br /><br />
+              また、「sister」でスキルや技術を身に付け、自信をつけた妹（メンティー）たちが、今度は自分が姉（メンター）として、誰かに勇気や自信を与え、背中を押せるようになれるよう、循環していきたいという思いももっています。
+              <br /><br />
+              「sister」はご存知の通り、英語で「姉妹」という意味を持っています。上下関係を持たず、姉妹で話をする感覚で、気軽にコミュニケーションを取れたらいいという意味を込めて、「sister」としています。
+              <br /><br />
+              あなたの「sister」を見つけて、キャリアやスキルの話をしましょう！
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="main-detail">
+        <h2 className="title">ステップ</h2>
+        <div className="main-detail-block">
+          <div className="main-step-contents">
+            <Image src="/img/step-image1.png" alt="登録する" height={'210'} width={'320'} />
+            <p className="sub-title">登録する</p>
+            <p className="detail-block">
+              ユーザー登録して、自分のプロフィールを充実させよう 
+            </p>
+          </div>
+          <div className="main-step-contents">
+            <Image src="/img/step-image2.png" alt="探す" height={'210'} width={'320'} />
+            <p className="sub-title">探す</p>
+            <p className="detail-block">
+              いろんなsisterのキャリアやスキル、経験を探してみよう。また、技術を教えてくれるプランなども探せます。
+              <br /><br />
+              まずは、あなたの気になるsisterを見つけてみよう        
+            </p>
+          </div>
+          <div className="main-step-contents">
+            <Image src="/img/step-image3.png" alt="教えてもらう" height={'210'} width={'320'} />
+            <p className="sub-title">教えてもらう</p>
+            <p className="detail-block">
+              あなたが気になるsisterやプランを見つけたら、気軽にメッセージを送ってみよう。
+              <br /><br />
+              探している答えが見つかるかもしれない。
+            </p>
+          </div>
+          <div className="main-step-contents">
+            <Image src="/img/step-image4.png" alt="教える" height={'210'} width={'320'} />
+            <p className="sub-title">教える</p>
+            <p className="detail-block">
+              sisterでは気軽にメンターに挑戦できるように、プランの作成は500円〜可能となっています。
+              <br /><br />
+              今度はあなたが姉になって、自分の経験を話してみましょう
+            </p>
+          </div>
+        </div>
+        </div>
+         <hr width="30%"/>
+        <div className="center-msg">
+          <p className="sub-title">＼ お姉さんになってみよう ／</p>
+          <p className="detail-block">
+            sister（シスター）は正式リリースしたばかりです！<br />
+            そのため、お姉さんになっていただける方を大募集中です。<br />
+            ぜひ、sisterでお姉さんとして相談を受けたり、技術を教えてみたりしてみませんか？
+            <br /><br />
+            女性も自由に選択し、自由に生きていけるような時代に変わっていく中で、<br />
+            女性が自分に自信を持ち、メンターをやってもいいんだと思えるような環境を<br />
+            sisterが提供できればと思っています！！
+          </p>
+          <a href="https://blog.sisterwith.com/blog/create-sister-plan" className="btn--main-color">お姉さんになる</a><br /><br />
+          <p className="center-msg"> すでに登録されている方はこちらから<a href="https://app.sisterwith.com/users/sign_in" className="normal-link">ログイン</a>してください！</p>
+        </div>
     </main>
-
     <footer>
-      <a
-        href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Powered by{' '}
-        <Image src="/vercel.svg" alt="Vercel Logo" height={'32'} width={'64'} />
-      </a>
+      <ul>
+        <li><a href="https://help.sisterwith.com/9bc05557623e46feba3d80e675c0166d" target="_blank">よくある質問</a></li>
+        <li><a href="https://help.sisterwith.com/sister-e9f876bfd07d4e4c91bcd8e3b0935134" target="_blank">sisterのガイドライン</a></li>
+        <li><a href="https://app.sisterwith.com/kiyaku" target="_blank">利用規約</a></li>
+        <li><a href="https://app.sisterwith.com/syohyo" target="_blank">特定商取引法に基づく表記</a></li>
+        <li><a href="https://app.sisterwith.com/privacy" target="_blank">プライバシーポリシー</a></li>
+      </ul>
     </footer>
 
     <style jsx>{`
@@ -76,21 +168,111 @@ export const Home = (): JSX.Element => (
       }
 
       main {
-        padding: 5rem 0;
         flex: 1;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
       }
 
+      .main-head{
+        height: 300px;
+        width: 100%;
+        min-height: 100vh;
+        background: url('/img/top.png') no-repeat center center;
+        background-size: auto 700px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+      }
+
+      .main-contents{
+        width: 100%;
+      }
+
+      .main-message{
+        display: flex;
+        width: 70%;
+        margin:0 auto;
+      }
+
+      .main-detail{
+        width: 100%;
+      }
+
+      .main-detail-block{
+        display: flex;
+        width: 100%;
+      }
+
+      .about-sister-block{
+        width: 70% !important;
+        margin:0 auto !important;
+      }
+
+      .main-detail-contents{
+        width: calc(100%/3);
+        margin: 10px 15px;
+      }
+
+      .main-about-sister{
+        width: 70%;
+      }
+
+      .about-sister-image{
+        width: 30%;
+      }
+
+      .main-step-contents{
+        width: calc(100%/4);
+        margin: 10px 15px;
+      }
+
+      .center-msg{
+        text-align: center;
+      }
+
+      .main-buttons{
+        margin: auto 0;
+      }
+
+      .btn--main-color {
+        display: inline-block;
+        padding: 10px 30px;
+        margin-bottom: 10px;
+        border-radius: 25px;
+        text-decoration: none;
+        color: #FFF;
+        background-color: rgba(181, 158, 151, 0.8);
+        transition: .4s;
+      }
+
+      .btn--main-color:hover {
+        background-color: rgba(181, 158, 151, 1);
+      }
+
+      .normal-link{
+        color: rgba(255, 153, 0, 0.8);
+        font-weight: bold;
+      }
+      .normal-link:hover{
+        line-color: rgb(255, 153, 0, 1);
+      }
+
+      hr{
+        margin: 50px auto;
+        background-color: rgba(181, 158, 151, 1);
+      }
+
       footer {
         width: 100%;
-        height: 100px;
+        height: 200px;
         border-top: 1px solid #eaeaea;
         display: flex;
         justify-content: center;
         align-items: center;
+        background-color: rgba(181, 158, 151, 1);
       }
 
       footer img {
@@ -113,6 +295,10 @@ export const Home = (): JSX.Element => (
         text-decoration: none;
       }
 
+      ul {
+        list-style: none;
+      }
+
       .title a:hover,
       .title a:focus,
       .title a:active {
@@ -120,14 +306,40 @@ export const Home = (): JSX.Element => (
       }
 
       .title {
-        margin: 0;
         line-height: 1.15;
         font-size: 4rem;
+        color: rgb(181, 158, 151);
+        text-shadow:0 0 20px #FFF;
+      }
+
+      .sub-title{
+        line-height: 1.15;
+        font-size: 2rem;
+        font-weight: bold;
+        color: rgb(181, 158, 151);
+      }
+
+      .main-title {
+        line-height: 1.15;
+        font-size: 6rem;
+        color: rgb(181, 158, 151);
+        text-shadow:0 0 20px #FFF;
       }
 
       .title,
       .description {
         text-align: center;
+      }
+
+      .message-big{
+        line-height: 1.15;
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: rgb(181, 158, 151);
+      }
+
+      .message-sub{
+        font-size: 1rem;
       }
 
       .description {
@@ -184,12 +396,72 @@ export const Home = (): JSX.Element => (
         line-height: 1.5;
       }
 
-      @media (max-width: 600px) {
-        .grid {
-          width: 100%;
-          flex-direction: column;
-        }
+      p{
+        color: rgb(102, 102, 102);
       }
+
+      @media screen and (max-width: 959px) {
+          .free-room-list{
+            @include forms(47%);
+          
+          }
+      }
+
+      @media screen and (max-width: 480px) {
+        .main-message{
+          display: block;
+          width: 70%;
+          margin:0 auto;
+        }
+
+        .message-big{
+          font-size: 2rem;
+        }
+
+        .main-buttons{
+          text-align: center;
+        }
+
+        .title{
+          font-size: 2.5rem;
+        }
+
+        .sub-title{
+          font-size: 1.5rem;
+        }
+
+        .main-detail-block{
+          display: block;
+        }
+
+        .main-detail-contents{
+          width: 100%;
+          margin-bottom: 50px;
+        }
+
+        .main-about-sister{
+          width: 100%;
+        }
+
+        .about-sister-image{
+          width: 100%;
+        }
+        .about-sister-image img{
+            margin:0 auto;
+          }
+
+        hr{
+          margin: 30px auto;
+        }
+
+        .main-step-contents{
+          width: 100%;
+          margin-bottom: 50px;
+        }
+
+
+      }
+
     `}</style>
 
     <style jsx global>{`
@@ -204,6 +476,8 @@ export const Home = (): JSX.Element => (
       * {
         box-sizing: border-box;
       }
+
+
     `}</style>
   </div>
 )
