@@ -34,7 +34,7 @@ export const Home = (): JSX.Element => (
           <p className="center-msg"> すでに登録されている方はこちらから<a href="https://app.sisterwith.com/users/sign_in" className="normal-link">ログイン</a>してください！</p>
         <div className="main-detail">
           <h2 className="title">sisterを活用する</h2>
-          <hr width="30%"/>
+          <hr />
           <div className="main-detail-block">
             <div className="main-detail-contents">
               <Image src="/img/detail-image1.png" alt="sisterを探せる" height={'210'} width={'320'} />
@@ -131,7 +131,7 @@ export const Home = (): JSX.Element => (
           </div>
         </div>
         </div>
-         <hr width="30%"/>
+         <hr />
         <div className="center-msg">
           <p className="sub-title">＼ お姉さんになってみよう ／</p>
           <p className="detail-block">
@@ -261,6 +261,7 @@ export const Home = (): JSX.Element => (
       }
 
       hr{
+        width: 30%;
         margin: 50px auto;
         background-color: rgba(181, 158, 151, 1);
       }
