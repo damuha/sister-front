@@ -149,11 +149,11 @@ export const Home = (): JSX.Element => (
     </main>
     <footer>
       <ul>
-        <li><a href="https://help.sisterwith.com/9bc05557623e46feba3d80e675c0166d" target="_blank">よくある質問</a></li>
-        <li><a href="https://help.sisterwith.com/sister-e9f876bfd07d4e4c91bcd8e3b0935134" target="_blank">sisterのガイドライン</a></li>
-        <li><a href="https://app.sisterwith.com/kiyaku" target="_blank">利用規約</a></li>
-        <li><a href="https://app.sisterwith.com/syohyo" target="_blank">特定商取引法に基づく表記</a></li>
-        <li><a href="https://app.sisterwith.com/privacy" target="_blank">プライバシーポリシー</a></li>
+        <li><a href="https://help.sisterwith.com/9bc05557623e46feba3d80e675c0166d" target="_blank" rel="noreferrer">よくある質問</a></li>
+        <li><a href="https://help.sisterwith.com/sister-e9f876bfd07d4e4c91bcd8e3b0935134" target="_blank" rel="noreferrer">sisterのガイドライン</a></li>
+        <li><a href="https://app.sisterwith.com/kiyaku" target="_blank" rel="noreferrer">利用規約</a></li>
+        <li><a href="https://app.sisterwith.com/syohyo" target="_blank" rel="noreferrer">特定商取引法に基づく表記</a></li>
+        <li><a href="https://app.sisterwith.com/privacy" target="_blank" rel="noreferrer">プライバシーポリシー</a></li>
       </ul>
     </footer>
 
