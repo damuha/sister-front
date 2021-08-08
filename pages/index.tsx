@@ -45,7 +45,9 @@ export const Home = (): JSX.Element => (
           <hr />
           <div className="main-detail-block">
             <div className="main-detail-contents">
-              <Image src="/img/detail-image1.png" alt="sisterを探せる" height={'210'} width={'320'} />
+              <div className="image">
+                <Image src="/img/detail-image1.png" alt="sisterを探せる" height={'210'} width={'320'} />
+              </div>
               <p className="sub-title">sisterを探せる</p>
               <p className="detail-block">
                 『sister』は女性のロールモデルが少ないIT・Web業界に特化した女性向け(自認も含む)キャリア/スキルシェアサービスです。エンジニアに限らず、IT・Web業界全般を対象としています
@@ -56,7 +58,9 @@ export const Home = (): JSX.Element => (
               </p>
             </div>
             <div className="main-detail-contents">
-              <Image src="/img/detail-image2.png" alt="悩みを相談する" height={'210'} width={'320'} />
+              <div className="image">
+                <Image src="/img/detail-image2.png" alt="悩みを相談する" height={'210'} width={'320'} />
+              </div>
               <p className="sub-title">悩みを相談する</p>
               <p className="detail-block">
                 女性が少ない業界だからこそ、参考になるキャリアや経験が身近で見つけづらく、悩んだことはないでしょうか？
@@ -67,7 +71,9 @@ export const Home = (): JSX.Element => (
               </p>
             </div>
             <div className="main-detail-contents">
-              <Image src="/img/detail-image3.png" alt="一歩踏み出す" height={'210'} width={'320'} />
+              <div className="image">
+                <Image src="/img/detail-image3.png" alt="一歩踏み出す" height={'210'} width={'320'} />
+                </div>
               <p className="sub-title">一歩踏み出す</p>
               <p className="detail-block">
                 女性には女性特有のライフステージがあります。その中で、夢をあきらめたり、新しいことに挑戦しにくかったり、いろんなことに悩むことも多いかと思います。
@@ -104,14 +110,18 @@ export const Home = (): JSX.Element => (
         <h2 className="title">ステップ</h2>
         <div className="main-detail-block">
           <div className="main-step-contents">
-            <Image src="/img/step-image1.png" alt="登録する" height={'210'} width={'320'} />
+            <div className="image">
+              <Image src="/img/step-image1.png" alt="登録する" height={'210'} width={'320'} />
+              </div>
             <p className="sub-title">登録する</p>
             <p className="detail-block">
               ユーザー登録して、自分のプロフィールを充実させよう 
             </p>
           </div>
           <div className="main-step-contents">
-            <Image src="/img/step-image2.png" alt="探す" height={'210'} width={'320'} />
+            <div className="image">
+              <Image src="/img/step-image2.png" alt="探す" height={'210'} width={'320'} />
+            </div>
             <p className="sub-title">探す</p>
             <p className="detail-block">
               いろんなsisterのキャリアやスキル、経験を探してみよう。また、技術を教えてくれるプランなども探せます。
@@ -120,7 +130,9 @@ export const Home = (): JSX.Element => (
             </p>
           </div>
           <div className="main-step-contents">
-            <Image src="/img/step-image3.png" alt="教えてもらう" height={'210'} width={'320'} />
+            <div className="image">
+              <Image src="/img/step-image3.png" alt="教えてもらう" height={'210'} width={'320'} />
+            </div>
             <p className="sub-title">教えてもらう</p>
             <p className="detail-block">
               あなたが気になるsisterやプランを見つけたら、気軽にメッセージを送ってみよう。
@@ -129,7 +141,9 @@ export const Home = (): JSX.Element => (
             </p>
           </div>
           <div className="main-step-contents">
-            <Image src="/img/step-image4.png" alt="教える" height={'210'} width={'320'} />
+            <div className="image">
+              <Image src="/img/step-image4.png" alt="教える" height={'210'} width={'320'} />
+            </div>
             <p className="sub-title">教える</p>
             <p className="detail-block">
               sisterでは気軽にメンターに挑戦できるように、プランの作成は500円〜可能となっています。
@@ -157,6 +171,7 @@ export const Home = (): JSX.Element => (
     </main>
     <footer>
       <ul>
+        <li><a href="https://help.sisterwith.com/a9be32b8eae443d3842a0768dc63cd5b" target="_blank" rel="noreferrer">問い合わせ</a></li>
         <li><a href="https://help.sisterwith.com/9bc05557623e46feba3d80e675c0166d" target="_blank" rel="noreferrer">よくある質問</a></li>
         <li><a href="https://help.sisterwith.com/sister-e9f876bfd07d4e4c91bcd8e3b0935134" target="_blank" rel="noreferrer">sisterのガイドライン</a></li>
         <li><a href="https://app.sisterwith.com/kiyaku" target="_blank" rel="noreferrer">利用規約</a></li>
@@ -177,7 +192,6 @@ export const Home = (): JSX.Element => (
 
       main {
         flex: 1;
-        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -196,7 +210,8 @@ export const Home = (): JSX.Element => (
       }
 
       .main-contents{
-        width: 100%;
+        width: 90%;
+        margin: 0 auto;
       }
 
       .main-message{
@@ -206,7 +221,8 @@ export const Home = (): JSX.Element => (
       }
 
       .main-detail{
-        width: 100%;
+        width: 90%;
+        margin: 0 auto;
       }
 
       .main-detail-block{
@@ -235,6 +251,12 @@ export const Home = (): JSX.Element => (
       .main-step-contents{
         width: calc(100%/4);
         margin: 10px 15px;
+      }
+
+      .image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
 
       .center-msg{
@@ -306,6 +328,7 @@ export const Home = (): JSX.Element => (
 
       ul {
         list-style: none;
+        padding-left: 0;
       }
 
       .title a:hover,
@@ -419,8 +442,7 @@ export const Home = (): JSX.Element => (
       @media screen and (max-width: 480px) {
         .main-message{
           display: block;
-          width: 70%;
-          margin:0 auto;
+          width: 100%;
         }
 
         .message-big{
@@ -441,11 +463,12 @@ export const Home = (): JSX.Element => (
 
         .main-detail-block{
           display: block;
+          width: 100% !important;
         }
 
         .main-detail-contents{
           width: 100%;
-          margin-bottom: 50px;
+          margin: 0 0 50px 0;
         }
 
         .main-about-sister{
@@ -454,6 +477,7 @@ export const Home = (): JSX.Element => (
 
         .about-sister-image{
           width: 100%;
+          text-align: center;
         }
         .about-sister-image img{
             margin:0 auto;
@@ -465,7 +489,7 @@ export const Home = (): JSX.Element => (
 
         .main-step-contents{
           width: 100%;
-          margin-bottom: 50px;
+          margin: 0 0 50px 0;
         }
 
 
