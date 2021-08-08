@@ -27,134 +27,89 @@ export default function Home() {
           </h1>
         </div>
         <div className="main-contents">
-          <div className="main-message">
-            <div className="message">
-              <p className="message-big">
-                もう、悩まなくていい。<br />
-                姉妹や仲間を<br />
-                ここで見つけよう<br />
-              </p>
-              <p className="message-sub">
-                女性が少ないIT業界だけど、ここで仲間を見つけられる、教えてもらえる。<br />
-                安心して、あなたのシスターに技術やキャリアの相談をしよう<br />
-              </p>
-            </div>
-            <div className="main-buttons">
-              <a href="https://app.sisterwith.com/users/sign_up" className="btn--main-color">はじめる</a><br />
-              <Link href="/about-sister-plan"><StyledLink >お姉さんになる</StyledLink></Link>
-              
-            </div>
-          </div>
             <p className="center-msg"> すでに登録されている方はこちらから<a href="https://app.sisterwith.com/users/sign_in" className="normal-link">ログイン</a>してください！</p>
           <div className="main-detail">
-            <h2 className="title">sisterを活用する</h2>
+            <h2 className="title">お姉さんになってみない？</h2>
             <hr />
-            <div className="main-detail-block">
-              <div className="main-detail-contents">
-                <div className="image">
-                  <Image src="/img/detail-image1.png" alt="sisterを探せる" height={'210'} width={'320'} />
-                </div>
-                <p className="sub-title">sisterを探せる</p>
-                <p className="detail-block">
-                  『sister』は女性のロールモデルが少ないIT・Web業界に特化した女性向け(自認も含む)キャリア/スキルシェアサービスです。エンジニアに限らず、IT・Web業界全般を対象としています
-                  <br /><br />
-                  あなたの「sister」を見つけて、1on1でメンターやコーチングなどをしてもらうこともできます。
-                  <br /><br />
-                  ※プランは500円〜
-                </p>
-              </div>
-              <div className="main-detail-contents">
-                <div className="image">
-                  <Image src="/img/detail-image2.png" alt="悩みを相談する" height={'210'} width={'320'} />
-                </div>
-                <p className="sub-title">悩みを相談する</p>
-                <p className="detail-block">
-                  女性が少ない業界だからこそ、参考になるキャリアや経験が身近で見つけづらく、悩んだことはないでしょうか？
-                  <br /><br />
-                  「sister」では、いろんな女性がキャリアや経験をシェアしています。あなたのこれからのヒントとなる、キャリアや経験、ロールモデルがを見つけましょう
-                  <br /><br />
-                  また、オープンカフェであなたの悩みや話したいことを共有してみましょう    
-                </p>
-              </div>
-              <div className="main-detail-contents">
-                <div className="image">
-                  <Image src="/img/detail-image3.png" alt="一歩踏み出す" height={'210'} width={'320'} />
-                  </div>
-                <p className="sub-title">一歩踏み出す</p>
-                <p className="detail-block">
-                  女性には女性特有のライフステージがあります。その中で、夢をあきらめたり、新しいことに挑戦しにくかったり、いろんなことに悩むことも多いかと思います。
-                  <br /><br />
-                  「sister」では同じような経験や悩み、それを解決した方法などをシェアすることで、誰かが一歩ふみ出せるよう、背中を押すプラットフォームです。          
-                </p>
-              </div>
+            <div className="main-buttons">
+              <Link href="/about-sister-plan"><StyledLink >お姉さんになってみる</StyledLink></Link>             
             </div>
-          </div>
-          <hr />
-          <div className="main-detail-block about-sister-block">
-            <div className="about-sister-image">
-              <Image src="/img/yanger-sister.png" alt="一歩踏み出す" height={'600'} width={'174'}/>
-            </div>
-            <div className="main-about-sister">
-              <p className="sub-title">sisterについて</p>
-              <p className="detail-block">
-                『sister』は女性のロールモデルが少ないIT・Web業界に特化した女性向けキャリア/スキルシェアサービスです。
-                <br /><br />
-                女性が少ないIT業界では、キャリアの悩みや、様々なライフステージを迎えるタイミングでの働き方など、身近に相談できる相手が少ないように感じるのではないでしょうか。
-                <br /><br />
-                「sister」では、心理的ハードルを極力下げ、キャリアや、IT・Web業界で働く上での悩み、結婚妊娠出産を経ての働き方、技術に関するフォローアップなどを、気軽に話せる「sister」がいればいいなという思いで、できたプラットフォームです。
-                <br /><br />
-                また、「sister」でスキルや技術を身に付け、自信をつけた妹（メンティー）たちが、今度は自分が姉（メンター）として、誰かに勇気や自信を与え、背中を押せるようになれるよう、循環していきたいという思いももっています。
-                <br /><br />
-                「sister」はご存知の通り、英語で「姉妹」という意味を持っています。上下関係を持たず、姉妹で話をする感覚で、気軽にコミュニケーションを取れたらいいという意味を込めて、「sister」としています。
-                <br /><br />
-                あなたの「sister」を見つけて、キャリアやスキルの話をしましょう！
-              </p>
+            <div className="main-detail-block about-sister-block">
+              <div className="about-sister-image">
+                <Image src="/img/big-sister.png" alt="一歩踏み出す" height={'600'} width={'200'}/>
+              </div>
+              <div className="main-about-sister">
+                <div>
+                  <p className="sub-title">気軽にメンターに挑戦</p>
+                  <p className="detail-block">
+                    シスタープランは最低500円から作成できます。
+                    <br /><br />
+                    女性はジェンダーバイアスから、自信がない方が多いということが、いろんな調査からわかっているそうです。
+                    <br /><br />
+                    sisterでは自信がない中でも、ハードルを極力下げてメンターではなくお姉さんの立場から相談に乗ったり、教えたりすることに挑戦することができます。
+                  </p>
+                </div>
+                <hr />
+                <div>
+                  <p className="sub-title">自由に料金・内容を設定</p>
+                  <p className="detail-block">
+                    あなたの経験や、キャリア、スキルなどをもとに、自由にシスタープランを作成することができます。料金も自由に設定可能です。あなたの経験はきっと誰かの背中を押すきっかけとなります。                  </p>
+                </div>
+                <hr />
+                <div>
+                  <p className="sub-title">空いた時間を有効活用</p>
+                  <p className="detail-block">
+                    シスタープランは自分のタイミングで設定ができるので、空いた時間にサポートすることができます。基本的にはチャットツールやsister上のDMでやり取りするため、スマホやPC１台で場所を問わず、サポートできます。もちろん、収入にもつながります。
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+        <hr />
         <div className="main-detail">
-          <h2 className="title">ステップ</h2>
+          <h2 className="title">お姉ちゃんのなり方</h2>
           <div className="main-detail-block">
             <div className="main-step-contents">
               <div className="image">
-                <Image src="/img/step-image1.png" alt="登録する" height={'210'} width={'320'} />
+                <Image src="/img/about-sister-plan1.png" alt="登録する" height={'210'} width={'320'} />
                 </div>
-              <p className="sub-title">登録する</p>
+              <p className="sub-title">プロフィール登録</p>
               <p className="detail-block">
-                ユーザー登録して、自分のプロフィールを充実させよう 
+                あなたがどんな人かわかるように、自分のプロフィールを充実させよう
               </p>
             </div>
             <div className="main-step-contents">
               <div className="image">
-                <Image src="/img/step-image2.png" alt="探す" height={'210'} width={'320'} />
+                <Image src="/img/about-sister-plan2.png" alt="探す" height={'210'} width={'320'} />
               </div>
-              <p className="sub-title">探す</p>
+              <p className="sub-title">本人確認</p>
               <p className="detail-block">
-                いろんなsisterのキャリアやスキル、経験を探してみよう。また、技術を教えてくれるプランなども探せます。
+                金銭のやり取りはStripeが管理します。プラン作成前にStripeと連携し、本人確認を実施しましょう。
                 <br /><br />
-                まずは、あなたの気になるsisterを見つけてみよう        
+                Stripe連携手順は<a href="https://help.sisterwith.com/Stripe-7b325f19b03d457297b999063f4d7447" className="normal-link">こちら</a>
               </p>
             </div>
             <div className="main-step-contents">
               <div className="image">
-                <Image src="/img/step-image3.png" alt="教えてもらう" height={'210'} width={'320'} />
+                <Image src="/img/about-sister-plan3.png" alt="教えてもらう" height={'210'} width={'320'} />
               </div>
-              <p className="sub-title">教えてもらう</p>
+              <p className="sub-title">シスタープラン作成</p>
               <p className="detail-block">
-                あなたが気になるsisterやプランを見つけたら、気軽にメッセージを送ってみよう。
+                自分がシェアしたり、教えられるプランを作成してみましょう。プラン内容は自由です。
                 <br /><br />
-                探している答えが見つかるかもしれない。
+                シスタープラン作成手順は<a href="https://help.sisterwith.com/6a49771d0f3e416496b2313dd6f686de" className="normal-link">こちら</a>
               </p>
             </div>
             <div className="main-step-contents">
               <div className="image">
-                <Image src="/img/step-image4.png" alt="教える" height={'210'} width={'320'} />
+                <Image src="/img/about-sister-plan4.png" alt="教える" height={'210'} width={'320'} />
               </div>
-              <p className="sub-title">教える</p>
+              <p className="sub-title">契約・教える</p>
               <p className="detail-block">
-                sisterでは気軽にメンターに挑戦できるように、プランの作成は500円〜可能となっています。
+                事前にコミュニケーションをとり、合意を得た上で契約しましょう。
                 <br /><br />
-                今度はあなたが姉になって、自分の経験を話してみましょう
+                契約完了後はガイドラインに沿って、コミュニケーションツールを利用して、相談に乗ったり教えたりしましょう。
               </p>
             </div>
           </div>
@@ -172,7 +127,7 @@ export default function Home() {
               sisterが提供できればと思っています！！
             </p>
             <div className="main-buttons">
-              <Link href="/about-sister-plan"><StyledLink >お姉さんになる</StyledLink></Link>
+              <Link href="/about-sister-plan"><StyledLink >お姉さんになってみる</StyledLink></Link>             
             </div>
             <p className="center-msg"> すでに登録されている方はこちらから<a href="https://app.sisterwith.com/users/sign_in" className="normal-link">ログイン</a>してください！</p>
           </div>
@@ -273,22 +228,8 @@ export default function Home() {
         }
 
         .main-buttons{
-          margin: auto 0;
-        }
-
-        .btn--main-color {
-          display: inline-block;
-          padding: 10px 30px;
-          margin-bottom: 10px;
-          border-radius: 25px;
-          text-decoration: none;
-          color: #FFF ;
-          background-color: rgba(181, 158, 151, 0.8);
-          transition: .4s;
-        }
-
-        .btn--main-color:hover {
-          background-color: rgba(181, 158, 151, 1);
+          margin: 50px  0;
+          text-align: center;
         }
 
         .normal-link{
