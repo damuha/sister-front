@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link';
+import styled from "styled-components";
 
 export default function Home() {
 
@@ -20,11 +22,12 @@ export default function Home() {
       <main>
         <div className="main-head">
           <h1 className="main-title">
-            sister
+          <Link href="/"><StyledLink >sister</StyledLink></Link>
           </h1>
         </div>
         <div className="main-contents">
-            <p className="center-msg"> すでに登録されている方はこちらから<a href="https://app.sisterwith.com/users/sign_in" className="normal-link">ログイン</a>してください！</p>
+          <Link href="/"><NormalLink>トップページに戻る</NormalLink></Link>
+          <p className="center-msg"> すでに登録されている方はこちらから<a href="https://app.sisterwith.com/users/sign_in" className="normal-link">ログイン</a>してください！</p>
           <div className="main-detail">
             <h2 className="title">お姉さんになってみない？</h2>
             <hr />
@@ -127,6 +130,7 @@ export default function Home() {
               <a href="https://app.sisterwith.com/users/sign_up" className="btn--main-color">お姉さんになってみる</a>
             </div>
             <p className="center-msg"> すでに登録されている方はこちらから<a href="https://app.sisterwith.com/users/sign_in" className="normal-link">ログイン</a>してください！</p>
+            <Link href="/"><NormalLink>トップページに戻る</NormalLink></Link>
           </div>
       </main>
       <footer>
@@ -173,6 +177,7 @@ export default function Home() {
         .main-contents{
           width: 90%;
           margin: 0 auto;
+          text-align: center;
         }
 
         .main-message{
@@ -480,3 +485,21 @@ export default function Home() {
 
 
 }
+
+const StyledLink = styled.a`
+  line-height: 1.15;
+  font-size: 6rem;
+  color: rgb(181, 158, 151);
+  text-shadow:0 0 20px #FFF;
+  cursor: pointer;
+`;
+
+const NormalLink = styled.a`
+  color: rgba(255, 153, 0, 0.7);
+  font-weight: bold;
+  cursor: pointer;
+  :hover{
+    line-color: rgb(255, 153, 0, 1);
+  }
+}
+`;
