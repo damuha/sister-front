@@ -10,13 +10,13 @@ export default function Home() {
     <div className="container">
       <Head>
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="あなたのsisterを見つけよう" />
-        <meta name="twitter:description" content="sisterを見つけて、いろんなお話をしてみませんか？" />
+        <meta name="twitter:title" content="sisterでお姉さんになってみよう" />
+        <meta name="twitter:description" content="sisterでお姉さんとして相談を受けたり、技術を教えてみたりしてみませんか？" />
         <meta name="twitter:image" content="https://sister-prod.s3-ap-northeast-1.amazonaws.com/background+with+whiteback_2+(1).png" />
         <meta property="og:url" content="sisterwith.com" />
-        <meta property="og:description" content="sisterを見つけて、いろんなお話をしてみませんか？" />
+        <meta property="og:description" content="sisterでお姉さんとして相談を受けたり、技術を教えてみたりしてみませんか？" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="あなたのsisterを見つけよう" />
+        <meta property="og:title" content="sisterでお姉さんになってみよう" />
         <meta property="og:image" content="https://sister-prod.så3-ap-northeast-1.amazonaws.com/background+with+whiteback_2+(1).png" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -32,7 +32,7 @@ export default function Home() {
             <h2 className="title">お姉さんになってみない？</h2>
             <hr />
             <div className="main-buttons">
-              <Link href="/about-sister-plan"><StyledLink >お姉さんになってみる</StyledLink></Link>             
+              <a href="https://app.sisterwith.com/users/sign_up" className="btn--main-color">お姉さんになってみる</a>          
             </div>
             <div className="main-detail-block about-sister-block">
               <div className="about-sister-image">
@@ -127,7 +127,7 @@ export default function Home() {
               sisterが提供できればと思っています！！
             </p>
             <div className="main-buttons">
-              <Link href="/about-sister-plan"><StyledLink >お姉さんになってみる</StyledLink></Link>             
+              <a href="https://app.sisterwith.com/users/sign_up" className="btn--main-color">お姉さんになってみる</a>
             </div>
             <p className="center-msg"> すでに登録されている方はこちらから<a href="https://app.sisterwith.com/users/sign_in" className="normal-link">ログイン</a>してください！</p>
           </div>
@@ -279,6 +279,21 @@ export default function Home() {
         ul {
           list-style: none;
           padding-left: 0;
+        }
+
+        .btn--main-color {
+          display: inline-block;
+          padding: 10px 30px;
+          margin-bottom: 10px;
+          border-radius: 25px;
+          text-decoration: none;
+          color: #FFF ;
+          background-color: rgba(181, 158, 151, 0.8);
+          transition: .4s;
+        }
+
+        .btn--main-color:hover {
+          background-color: rgba(181, 158, 151, 1);
         }
 
         .title a:hover,
@@ -468,19 +483,3 @@ export default function Home() {
 
 
 }
-
-const StyledLink = styled.a`
-  display: inline-block;
-  padding: 10px 30px;
-  margin-bottom: 10px;
-  border-radius: 25px;
-  text-decoration: none;
-  color: #FFF ;
-  background-color: rgba(181, 158, 151, 0.8);
-  transition: .4s;
-  cursor: pointer;
-
-  :hover {
-    background-color: rgba(181, 158, 151, 1);
-  }
-`;
