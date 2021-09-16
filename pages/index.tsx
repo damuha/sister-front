@@ -179,10 +179,10 @@ export default function Home() {
       </main>
       <footer>
         <ul>
-         <li><a href="https://cloudy-learning-bc3.notion.site/377afa60e2ce466ca1ba7061da37a633" target="_blank" rel="noreferrer">ご利用ガイド</a></li>
-          <li><a href="https://cloudy-learning-bc3.notion.site/a9be32b8eae443d3842a0768dc63cd5b" target="_blank" rel="noreferrer">問い合わせ</a></li>
-          <li><a href="https://cloudy-learning-bc3.notion.site/9bc05557623e46feba3d80e675c0166d" target="_blank" rel="noreferrer">よくある質問</a></li>
-          <li><a href="https://cloudy-learning-bc3.notion.site/sister-e9f876bfd07d4e4c91bcd8e3b0935134" target="_blank" rel="noreferrer">sisterのガイドライン</a></li>
+          <li><a href="https://help.sisterwith.com" target="_blank" rel="noreferrer">ご利用ガイド</a></li>
+          <li><a href="https://help.sisterwith.com/a9be32b8eae443d3842a0768dc63cd5b" target="_blank" rel="noreferrer">問い合わせ</a></li>
+          <li><a href="https://help.sisterwith.com/9bc05557623e46feba3d80e675c0166d" target="_blank" rel="noreferrer">よくある質問</a></li>
+          <li><a href="https://help.sisterwith.com/sister-e9f876bfd07d4e4c91bcd8e3b0935134" target="_blank" rel="noreferrer">sisterのガイドライン</a></li>
           <li><a href="https://app.sisterwith.com/kiyaku" target="_blank" rel="noreferrer">利用規約</a></li>
           <li><a href="https://app.sisterwith.com/syohyo" target="_blank" rel="noreferrer">特定商取引法に基づく表記</a></li>
           <li><a href="https://app.sisterwith.com/privacy" target="_blank" rel="noreferrer">プライバシーポリシー</a></li>
